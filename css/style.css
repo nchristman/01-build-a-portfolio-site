@@ -1,0 +1,40 @@
+/*                         Base                               */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+a {}
+a:hover {}
+h1, h2, h3, h4, h5, h6 {}
+
+
+/*                         Layout                             */
+
+.site-content-wrap {}
+header {}
+main {}
+section {}
+
+/* Display flex for these instead of fluid widths and floats?*/
+.featured-work article {
+  width: 33.333333333333336%;
+  padding-left: 1em;
+  float: left;
+}
+
+/*                         Module                             */
+
+
+/*                         State                              */
+
+
+/*                         Theme                              */
