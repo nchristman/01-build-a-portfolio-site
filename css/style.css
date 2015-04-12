@@ -24,6 +24,19 @@ header {}
 main {}
 section {}
 
+.featured-work {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.featured-work h2 {
+  flex: 1 100%;
+}
+
+.featured-item { 
+  flex: 1 0 auto;
+}
+
 /* Display flex for these instead of fluid widths and floats?*/
 .featured-work article {
   width: 33.333333333333336%;
