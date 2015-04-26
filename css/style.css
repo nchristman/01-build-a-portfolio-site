@@ -67,7 +67,14 @@ h6 {
   font-weight: 400;
 }
 
-img { width: 100%;}
+figure {
+  margin: 0;
+}
+
+img { 
+  width: 100%;
+  display: block;
+}
 
 .visually-hidden {
   position: absolute; 
@@ -89,6 +96,10 @@ img { width: 100%;}
 
 header {
   margin: 1.5em 0;
+}
+
+header img {
+  display: inline;
 }
 
 header h1,
@@ -118,6 +129,14 @@ section {}
   flex: 1 100%;
 }
 
+.featured-work figure {
+    height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 /*.featured-item {
   flex: 1 0 auto;
   width: 33.333333333333336%;
@@ -129,12 +148,29 @@ section {}
   box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.24), 0 0 2px hsla(0, 0%, 0%, 0.12);
 }*/
 
+.featured-work article:first-of-type {
+  flex: 0 1 100%;
+}
+
 .featured-item {
   flex: 1 0 30%;
-  padding: .5em;
+  margin: .5em;
   background: white;
   border-radius: .3em;
   box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.24), 0 0 2px hsla(0, 0%, 0%, 0.12);
+}
+
+.featured-item > * {
+  display: block;
+}
+
+.featured-item h3, 
+.featured-item a {
+  padding: 0 .5em;
+}
+
+.featured-item h3 {
+  margin: .5em 0 0;
 }
 
 /*                         Module                             */
@@ -149,6 +185,30 @@ section {}
   box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.24), 0 0 2px hsla(0, 0%, 0%, 0.12);
 }
 
+.hero-banner figcaption {
+  text-align: left;
+  color: #666;
+  font-style: italic;
+  font-size: .75em;
+  margin-top: .5em;
+}
+
+#project1 figure{
+  background-image: url("../img/intheair.jpg");
+}
+
+#project2 figure{
+  background-image: url("../img/coloradosnow.jpg");
+}
+
+#project3 figure{
+  background-image: url("../img/reneelamp.jpg");
+}
+
+footer {
+  color: #666;
+  font-size: .75em;
+}
 
 /*                         State                              */
 
