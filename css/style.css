@@ -21,6 +21,7 @@ body {
   color: #333;
   text-align: center;
   margin: 0 1.5em;
+  min-width: 18.75em;
 }
 
 a {
@@ -29,7 +30,6 @@ a {
 
 a:hover {}
 
-h1, h2, h3, h4, h5, h6 {}
 
 h1 {
   font-size: 1.41176471em;
@@ -90,10 +90,6 @@ img {
   margin: 0 auto;
 }
 
-/*section + section  {
-  margin-top: 2em;
-}*/
-
 header {
   margin: 1.5em 0;
 }
@@ -130,23 +126,12 @@ section {}
 }
 
 .featured-work figure {
-    height: 200px;
+    height: 8.5em;
     overflow: hidden;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-
-/*.featured-item {
-  flex: 1 0 auto;
-  width: 33.333333333333336%;
-  padding: .5em;
-  float: left;
-  background: white;
-  border-radius: .3em;
-  border: 1px solid transparent;
-  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.24), 0 0 2px hsla(0, 0%, 0%, 0.12);
-}*/
 
 .featured-work article:first-of-type {
   flex: 0 1 100%;
@@ -175,7 +160,7 @@ section {}
 
 /*                         Module                             */
 .logo img {
-  max-width: 90px;
+  max-width: 5.625em;
 }
 
 .hero-image-wrapper {
@@ -211,7 +196,17 @@ footer {
 }
 
 /*                         State                              */
+@media (max-width: 28.125em) {
+  .featured-item {
+    flex: 0 1 100%;
+  }
+}
 
+@media (min-width: 37.5em) {
+  .featured-item figure{
+    height: 12.5em;
+  }
+}
 
 /*                         Theme                              */
 
@@ -230,8 +225,8 @@ h2:before, h2:after {
   top: 0.65em;
 }
 h2:before {
-  margin-right:10px;
+  margin-right: 0.625em;
 }
 h2:after {
-  margin-left:10px;
+  margin-left: 0.625em;
 }
