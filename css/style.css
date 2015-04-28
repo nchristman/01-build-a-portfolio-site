@@ -28,8 +28,6 @@ a {
   color: #125083;
 }
 
-a:hover {}
-
 
 h1 {
   font-size: 1.41176471em;
@@ -76,12 +74,16 @@ img {
   display: block;
 }
 
+/* Visually hidden snippet from Snook.ca */
 .visually-hidden {
   position: absolute; 
   overflow: hidden; 
   clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+  height: 1px;
+  width: 1px; 
+  margin: -1px;
+  padding: 0;
+  border: 0; 
 }
 
 /*                         Layout                             */
@@ -118,7 +120,7 @@ header p {
   align-items: stretch;
 }
 
-.featured-work h2 {
+.flex-heading {
   flex: 1 100%;
 }
 
